@@ -1,3 +1,5 @@
+"use client";
+
 import Landing from "@/templates/landing";
 
 const Home = () => <Landing />;
