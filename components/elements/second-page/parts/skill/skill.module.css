@@ -3,9 +3,14 @@
   align-items: center;
   gap: 15px;
   font-size: 1.8rem;
-  width: fit-content;
   min-width: 15%;
 }
 .skill svg {
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 878px) {
+  .skill {
+    min-width: 40%;
+  }
 }

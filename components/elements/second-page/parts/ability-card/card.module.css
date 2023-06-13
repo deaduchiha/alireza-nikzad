@@ -16,3 +16,9 @@
   font-size: 17px;
   font-family: Abel;
 }
+
+@media screen and (max-width: 878px) {
+  .card__container {
+    width: 100%;
+  }
+}

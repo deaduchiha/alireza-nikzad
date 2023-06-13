@@ -32,3 +32,18 @@
   gap: 50px;
   padding-bottom: 20px;
 }
+
+@media screen and (max-width: 878px) {
+  .container {
+    justify-content: center;
+  }
+  .title {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .ability {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
