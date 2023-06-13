@@ -1,11 +1,4 @@
-"use client";
-
 import "./globals.css";
-import { Inter } from "next/font/google";
-
-import { Scrollbar } from "react-scrollbars-custom";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "alireza",
@@ -19,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

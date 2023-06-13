@@ -1,7 +1,4 @@
-"use client";
-
 import { ReactNode } from "react";
-
 import styles from "./skill.module.css";
 
 type SkillProps = {

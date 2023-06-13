@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client";
 
 import styles from "./first-page.module.css";
 import Typewriter from "typewriter-effect";

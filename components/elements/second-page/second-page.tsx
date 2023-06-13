@@ -1,5 +1,3 @@
-"use client";
-
 import Card from "./parts/ability-card/card";
 import styles from "./second-page.module.css";
 import Skill from "./parts/skill/skill";

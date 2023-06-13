@@ -1,5 +1,3 @@
-"use client";
-
 import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
