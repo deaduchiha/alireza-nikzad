@@ -1,0 +1,41 @@
+.experience {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Rubik;
+}
+
+.experience h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.experience ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  list-style: none;
+  padding-left: 15px;
+}
+.experience ul li {
+  list-style: disc;
+}
+
+.experience p {
+  text-align: justify;
+  color: #2f2f2f;
+}
+
+@media screen and (max-width: 887px) {
+  .experience {
+    width: 100%;
+  }
+}

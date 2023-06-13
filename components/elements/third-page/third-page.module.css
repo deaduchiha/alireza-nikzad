@@ -13,4 +13,12 @@
 
 .title {
   font-size: 2.7rem;
+  margin-bottom: 40px;
+}
+
+.experience {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
