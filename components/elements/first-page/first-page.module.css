@@ -31,10 +31,6 @@
   font-size: 20px;
 }
 
-.biography p::before {
-  content: " ";
-}
-
 .photo {
   width: 290px;
   height: 320px;
@@ -67,4 +63,48 @@
 .email {
   font-weight: 100;
   font-size: 13px;
+}
+
+@media screen and (max-width: 883px) {
+  .container {
+    width: 95%;
+  }
+
+  .biography__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .biography p:last-child {
+    height: 150px;
+    text-align: left;
+  }
+
+  .photo {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .social-media {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .icons {
+    justify-content: center;
+  }
+  .biography p:first-child {
+    width: 100%;
+  }
+  .biography p {
+    max-width: 290px !important;
+    min-width: 290px !important;
+    font-size: medium;
+  }
+  .biography p:last-child {
+    height: 160px;
+    text-align: left;
+  }
 }
