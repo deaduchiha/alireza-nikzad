@@ -45,12 +45,14 @@ const FirstPage = () => {
           <Typewriter
             component="p"
             options={{
-              strings: [
-                "Experienced in creating visually appealing interfaces as a Front-end developer and UI/UX design enthusiast, with a medium foundation in backend development.",
-              ],
-              autoStart: true,
-              loop: true,
               delay: 50,
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(
+                  "Experienced in creating visually appealing interfaces as a Front-end developer and UI/UX design enthusiast, with a medium foundation in backend development."
+                )
+                .start();
             }}
           />
         </div>
