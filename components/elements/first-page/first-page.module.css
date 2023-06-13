@@ -1,16 +1,18 @@
 .container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
   width: 70vw;
   margin: auto;
   height: 100vh;
   font-family: Ubuntu;
+  flex-direction: column;
 }
 
 .biography__container {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -34,12 +36,35 @@
 }
 
 .photo {
-  width: 280px;
-  height: 280px;
+  width: 290px;
+  height: 320px;
   overflow: hidden;
 }
 
 .photo img {
   object-fit: cover;
   border-radius: 18px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.icons a svg {
+  font-size: 23px;
+}
+
+.email {
+  font-weight: 100;
+  font-size: 13px;
 }
