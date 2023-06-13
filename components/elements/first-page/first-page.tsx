@@ -8,6 +8,7 @@ import Slider from "./parts/slider";
 import { GrLinkedin } from "react-icons/gr";
 import { ImGithub } from "react-icons/im";
 import { GrInstagram } from "react-icons/gr";
+import { FaTelegram } from "react-icons/fa";
 
 const data = [
   {
@@ -24,6 +25,11 @@ const data = [
     name: "instagram",
     icon: <GrInstagram />,
     url: "https://www.instagram.com/alirezankz/",
+  },
+  {
+    name: "telegram",
+    icon: <FaTelegram />,
+    url: "https://t.me/deaduchiha",
   },
 ];
 
