@@ -22,5 +22,8 @@
     "swiper": "8.4.6",
     "typescript": "5.1.3",
     "typewriter-effect": "^2.20.1"
+  },
+  "devDependencies": {
+    "@types/react-collapse": "^5.0.1"
   }
 }

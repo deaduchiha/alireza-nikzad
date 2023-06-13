@@ -20,4 +20,15 @@
   justify-content: space-between;
   margin-top: 60px;
   flex-wrap: wrap;
+  margin-bottom: 130px;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 50px;
+  padding-bottom: 20px;
 }

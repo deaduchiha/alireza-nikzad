@@ -1,9 +1,29 @@
-import Card from "./parts/card";
+import Card from "./parts/ability-card/card";
 import styles from "./second-page.module.css";
+import Skill from "./parts/skill/skill";
 
 import { MdDesignServices } from "react-icons/md";
 import { MdDeveloperMode } from "react-icons/md";
 import { MdCastForEducation } from "react-icons/md";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { BsFillBootstrapFill } from "react-icons/bs";
+import { AiFillApi } from "react-icons/ai";
+import { SiMui } from "react-icons/si";
+import { SiChakraui } from "react-icons/si";
+import { SiAntdesign } from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
+import { SiMongodb } from "react-icons/si";
+import { SiNodedotjs } from "react-icons/si";
+
+import { SiFigma } from "react-icons/si";
+import { SiAdobexd } from "react-icons/si";
+import { BsTrello } from "react-icons/bs";
+import { SiJirasoftware } from "react-icons/si";
+import { SiAdobephotoshop } from "react-icons/si";
+import { BsWordpress } from "react-icons/bs";
 
 const abilities = [
   {
@@ -29,6 +49,30 @@ const abilities = [
   },
 ];
 
+const skills = [
+  { id: 1, icon: <FaHtml5 />, title: "HTML 5" },
+  { id: 2, icon: <FaCss3 />, title: "CSS 3" },
+  { id: 3, icon: <SiJavascript />, title: "Javascript" },
+  { id: 4, icon: <FaReact />, title: "React" },
+  { id: 5, icon: <AiFillApi />, title: "Restful API" },
+  { id: 6, icon: <BsFillBootstrapFill />, title: "Bootstrap" },
+  { id: 7, icon: <SiMui />, title: "Mui" },
+  { id: 8, icon: <SiChakraui />, title: "Chakra ui" },
+  { id: 9, icon: <SiAntdesign />, title: "Ant design" },
+  { id: 10, icon: <AiFillGithub />, title: "Git" },
+  { id: 11, icon: <SiMongodb />, title: "MongoDB" },
+  { id: 12, icon: <SiNodedotjs />, title: "NodeJs" },
+];
+
+const designSkill = [
+  { id: 13, icon: <SiFigma />, title: "Figma" },
+  { id: 14, icon: <SiAdobexd />, title: "Adobe XD" },
+  { id: 15, icon: <BsTrello />, title: "Trello" },
+  { id: 16, icon: <SiJirasoftware />, title: "Jira" },
+  { id: 17, icon: <SiAdobephotoshop />, title: "Photoshop" },
+  { id: 18, icon: <BsWordpress />, title: "Word press" },
+];
+
 const SecondPage = () => {
   return (
     <div className={styles.container}>
@@ -41,6 +85,22 @@ const SecondPage = () => {
             title={ability.title}
             description={ability.description}
           />
+        ))}
+      </div>
+
+      <h2 className={styles.title}>Skills</h2>
+      <div className={styles.skills}>
+        {skills.map((skill) => (
+          <Skill key={skill.id} icon={skill.icon} title={skill.title} />
+        ))}
+      </div>
+      <br />
+      <br />
+      <hr style={{ width: "100%" }} />
+
+      <div className={styles.skills}>
+        {designSkill.map((skill) => (
+          <Skill key={skill.id} icon={skill.icon} title={skill.title} />
         ))}
       </div>
     </div>
