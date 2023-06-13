@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  width: 80vw;
+  margin: auto;
+  height: 100vh;
+  font-family: Ubuntu;
+}
+
+.biography {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.biography p {
+  min-width: 390px;
+}
+
+.biography p::before {
+  content: " ";
+}
+
+.photo {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.photo img {
+  object-fit: cover;
+  border-radius: 18px;
+}

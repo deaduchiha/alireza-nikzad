@@ -25,6 +25,12 @@
       "@/elements/*": ["./components/elements/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/elements/first-page/parts/slider.jsx"
+  ],
   "exclude": ["node_modules"]
 }

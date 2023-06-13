@@ -1,4 +1,10 @@
+import FirstPage from "../elements/first-page/first-page";
+
 const Landing = () => {
-  return <h1>Landing page</h1>;
+  return (
+    <>
+      <FirstPage />
+    </>
+  );
 };
 export default Landing;
