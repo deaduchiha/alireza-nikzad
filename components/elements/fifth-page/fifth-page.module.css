@@ -13,6 +13,11 @@
   left: 0;
   margin-left: 0;
 }
+.projectContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .projectPhotosSwiper {
   height: 220px;
@@ -21,10 +26,10 @@
 .projectHolder {
   text-align: justify;
   margin: 30px 0;
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 .projectHolder h3 {
   text-transform: uppercase;
@@ -37,7 +42,7 @@
 
 .tools {
   display: flex;
-  gap: 10px;
+  gap: 5px 20px;
   flex-wrap: wrap;
 }
 
@@ -45,5 +50,14 @@
   font-size: 1rem;
 }
 .projectHolder span::before {
-  content: "⏺";
+  content: "•";
+}
+
+@media screen and (max-width: 1091px) {
+  .projectContainer {
+    flex-direction: column;
+  }
+  .projectHolder {
+    width: 100%;
+  }
 }

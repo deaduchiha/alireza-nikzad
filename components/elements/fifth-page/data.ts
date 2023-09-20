@@ -14,4 +14,11 @@ export const data = [
       "Figma",
     ],
   },
+  {
+    id: 2,
+    project: "Rhino Dev Team templates",
+    description:
+      "Implementation of various restaurant and cafe menus for the Rhino team.",
+    tools: ["Vanilla JavaScript", "Jquery", "Swiper", "Svg external loader"],
+  },
 ];

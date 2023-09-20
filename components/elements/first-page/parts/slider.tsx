@@ -27,10 +27,10 @@ const Slider = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <Image src="/image 1.jpg" alt="" fill={true} />
+        <Image src="/image 1.jpg" alt="" fill sizes={"max-width:100%"} />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src="/image 2.jpg" alt="" fill={true} />
+        <Image src="/image 2.jpg" alt="" fill sizes={"max-width:100%"} />
       </SwiperSlide>
     </Swiper>
   );
