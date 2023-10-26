@@ -26,6 +26,7 @@ const Slider = () => {
       modules={[EffectCreative]}
       className="mySwiper"
     >
+      {/* slides */}
       <SwiperSlide>
         <Image src="/image 2.jpg" alt="" fill sizes={"max-width:100%"} />
       </SwiperSlide>
