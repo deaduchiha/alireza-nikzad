@@ -25,7 +25,7 @@ export const data = [
     id: 3,
     project: "Aryana Academy",
     description:
-      "Complete website design with expertise in both frontend and backend for the language academy Ariana, aimed at selling language courses and managing students' knowledge in-person.",
+      "Complete website design with expertise in both frontend and backend for the language academy Aryana, aimed at selling language courses and managing students' knowledge in-person.",
     tools: [
       "NextJS 13.4",
       "Chakraui",
