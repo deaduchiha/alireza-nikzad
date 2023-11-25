@@ -6,13 +6,13 @@ import ThirdPage from "../elements/third-page/third-page";
 
 const Landing = () => {
   return (
-    <>
+    <div style={{ position: "relative", zIndex: 100 }}>
       <FirstPage />
       <SecondPage />
       <ThirdPage />
       <FifthPage />
       <FourthPage />
-    </>
+    </div>
   );
 };
 export default Landing;

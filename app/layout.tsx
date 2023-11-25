@@ -1,3 +1,4 @@
+import { tsParticles } from "tsparticles-engine";
 import "./globals.css";
 
 export const metadata = {

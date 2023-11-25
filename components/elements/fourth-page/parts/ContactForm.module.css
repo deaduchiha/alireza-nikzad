@@ -6,7 +6,7 @@
 }
 
 .formGroup {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .label {
@@ -34,9 +34,8 @@
 
 .button {
   width: 40%;
-  margin: auto;
   padding: 10px 20px;
-  background-color: #3498db;
+  background-color: #0d0d0d;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -45,7 +44,7 @@
 }
 
 .button:hover {
-  background-color: #2980b9;
+  background-color: rgb(51, 51, 51);
 }
 
 .image {
@@ -63,7 +62,6 @@
 
 .image h2 {
   width: fit-content;
-
   position: absolute;
   bottom: 10px;
   left: 0;
