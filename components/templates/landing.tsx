@@ -7,6 +7,7 @@ import ThirdPage from "../elements/third-page/third-page";
 const Landing = () => {
   return (
     <div style={{ position: "relative", zIndex: 100 }}>
+      {/* make it to show */}
       <FirstPage />
       <SecondPage />
       <ThirdPage />
