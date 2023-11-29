@@ -1,6 +1,7 @@
 import Card from "./parts/ability-card/card";
 import styles from "./second-page.module.css";
 import Skill from "./parts/skill/skill";
+import { motion } from "framer-motion";
 
 import { MdDesignServices } from "react-icons/md";
 import { MdDeveloperMode } from "react-icons/md";
@@ -73,6 +74,18 @@ const designSkill = [
   { id: 18, icon: <BsWordpress />, title: "Word press" },
 ];
 
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
 const SecondPage = () => {
   return (
     <div className={styles.container}>
@@ -89,20 +102,32 @@ const SecondPage = () => {
       </div>
 
       <h2 className={styles.title}>Skills</h2>
-      <div className={styles.skills}>
+      <motion.div
+        className={styles.skills}
+        variants={container}
+        initial="hidden"
+        whileInView={"visible"}
+        viewport={{ once: true }}
+      >
         {skills.map((skill) => (
           <Skill key={skill.id} icon={skill.icon} title={skill.title} />
         ))}
-      </div>
+      </motion.div>
       <br />
       <br />
       <hr style={{ width: "100%" }} />
 
-      <div className={styles.skills}>
+      <motion.div
+        className={styles.skills}
+        variants={container}
+        initial="hidden"
+        whileInView={"visible"}
+        viewport={{ once: true }}
+      >
         {designSkill.map((skill) => (
           <Skill key={skill.id} icon={skill.icon} title={skill.title} />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

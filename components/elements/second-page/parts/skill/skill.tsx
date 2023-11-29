@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import styles from "./skill.module.css";
+import { motion } from "framer-motion";
 
 type SkillProps = {
   icon: ReactNode;
@@ -7,11 +8,18 @@ type SkillProps = {
 };
 
 const Skill = ({ icon, title }: SkillProps) => {
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
-    <div className={styles.skill}>
+    <motion.div className={styles.skill} variants={item}>
       {icon}
       <span>{title}</span>
-    </div>
+    </motion.div>
   );
 };
 
