@@ -1,37 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
-
 import styles from "./first-page.module.css";
 import Typewriter from "typewriter-effect";
 import Slider from "./parts/slider";
 import { motion } from "framer-motion";
-
-import { GrLinkedin } from "react-icons/gr";
-import { ImGithub } from "react-icons/im";
-import { GrInstagram } from "react-icons/gr";
-import { FaTelegram } from "react-icons/fa";
-
-const data = [
-  {
-    name: "linkedin",
-    icon: <GrLinkedin />,
-    url: "https://www.linkedin.com/in/alireza-nikzad/",
-  },
-  {
-    name: "github",
-    icon: <ImGithub />,
-    url: "https://github.com/deaduchiha",
-  },
-  {
-    name: "instagram",
-    icon: <GrInstagram />,
-    url: "https://www.instagram.com/alirezankz/",
-  },
-  {
-    name: "telegram",
-    icon: <FaTelegram />,
-    url: "https://t.me/deaduchiha",
-  },
-];
+import { socialMediaData } from "@/data/data";
 
 const FirstPage = () => {
   const item = {
@@ -58,7 +29,8 @@ const FirstPage = () => {
       <div className={styles.biography__container}>
         <div className={styles.biography}>
           <p>
-            I'm <b>Alireza Nikzad</b>
+            {"I'm"}
+            <b>Alireza Nikzad</b>
           </p>
 
           <Typewriter
@@ -88,7 +60,7 @@ const FirstPage = () => {
           viewport={{ once: true }}
           className={styles.icons}
         >
-          {data.map((social) => (
+          {socialMediaData.map((social) => (
             <motion.a
               variants={item}
               key={social.name}
