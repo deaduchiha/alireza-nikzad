@@ -1,8 +1,8 @@
-import { tsParticles } from "tsparticles-engine";
-import "./globals.css";
+import { Providers } from "./providers";
+import { fonts } from "@/fonts";
 
 export const metadata = {
-  title: "alireza",
+  title: "Alireza Nikzad",
   description: "Alireza Nikzad - Portfolio",
 };
 
@@ -12,8 +12,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={fonts.poppins.variable}>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -30,7 +29,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/elements/first-page/parts/slider.jsx"
+    "components/elements/first-page/parts/slider.jsx",
+    "components/templates/ContactPage.jsx"
   ],
   "exclude": ["node_modules"]
 }
