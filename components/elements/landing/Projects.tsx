@@ -13,11 +13,11 @@ export default function Projects() {
       <VStack mb={20} spacing={10}>
         {data.map((d) => (
           <Flex
-            // as={motion.div}
-            // initial={{ opacity: 0, x: d.id % 2 === 0 ? -500 : 500 }}
-            // whileInView={{ opacity: 1, x: 0 }}
-            // transition={"0.8s"}
-            // viewport={{ margin: "-100px", once: true }}
+            as={motion.div}
+            initial={{ opacity: 0, y: 180 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={"0.8s"}
+            viewport={{ margin: "-100px", once: true }}
             borderRadius={5}
             key={d.id}
             alignItems={"center"}

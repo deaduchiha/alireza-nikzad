@@ -1,5 +1,6 @@
 import { Box, Button, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HaveIdea() {
   return (
@@ -11,12 +12,22 @@ export default function HaveIdea() {
             Write anything here something about yourself to showcase what
             actually you doing or targeting etc.
           </Text>
-          <Button variant={"portfolio"} w={"fit-content"}>
+          <Button
+            as={Link}
+            href={"contact-me"}
+            variant={"portfolio"}
+            w={"fit-content"}
+          >
             send me a message
           </Button>
         </Flex>
       </Flex>
-      <Box pos={"relative"} w={"35%"} h={"390px"}>
+      <Box
+        display={{ base: "none", md: "block" }}
+        pos={"relative"}
+        w={"35%"}
+        h={"390px"}
+      >
         <Image src={"/message.svg"} alt="message" fill />
       </Box>
     </Flex>
