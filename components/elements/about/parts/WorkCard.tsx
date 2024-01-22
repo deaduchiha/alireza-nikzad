@@ -34,8 +34,7 @@ export default function WorkCard() {
 const data = [
   {
     id: 1,
-    // شرکت رهاب گستر خطه سبز مازند
-    company: "Rahab gostar sabz mazand",
+    company: "RAHAB GOSTAR SABZ MAZAND",
     date: "November 2022 – November 2023",
     place: "Sabzevar, Razavai Khorasan, Iran",
   },
