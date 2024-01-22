@@ -34,24 +34,31 @@ export default function WorkCard() {
 const data = [
   {
     id: 1,
+    // شرکت رهاب گستر خطه سبز مازند
+    company: "Rahab gostar sabz mazand",
+    date: "November 2022 – November 2023",
+    place: "Sabzevar, Razavai Khorasan, Iran",
+  },
+  {
+    id: 2,
     company: "DROPLINKED",
     date: "March 2023 – May 2023",
     place: "Berlin, Germany",
   },
   {
-    id: 2,
+    id: 3,
     company: "ARMAN PAJOUHAN IN SCIENCE & TECHNOLOGY PARK",
     date: "June 2021 – December 2021",
     place: "Sari, Mazandaran, Iran",
   },
   {
-    id: 3,
+    id: 4,
     company: "STRING STUDIO",
     date: "November 2020 - january 2021",
     place: "Golestan, Gorgan",
   },
   {
-    id: 4,
+    id: 5,
     company: "SEPEHR ACADEMY",
     date: "May 2020 – October 2020",
     place: "Sari, Mazandaran, Iran",
