@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Button, Flex, Heading, Text } from "@chakra-ui/react";
 
 export default function InfoCard({ t, d }: { t: string; d: string }) {
   return (

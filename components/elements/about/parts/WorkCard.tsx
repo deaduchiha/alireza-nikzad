@@ -35,7 +35,7 @@ const data = [
   {
     id: 1,
     company: "RAHAB GOSTAR SABZ MAZAND",
-    date: "November 2022 – November 2023",
+    date: "May 2023 – February 2024",
     place: "Sabzevar, Razavai Khorasan, Iran",
   },
   {
