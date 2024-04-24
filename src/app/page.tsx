@@ -1,8 +1,5 @@
-import { Button } from "@chakra-ui/react";
+import Landing from "@/templates/Landing";
+
 export default function Home() {
-  return (
-    <>
-      <Button>دانلود از سایت</Button>
-    </>
-  );
+  return <Landing />;
 }

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { vazirmatn } from "./fonts";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
@@ -14,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={`${vazirmatn.className}`}>
+      <body>
         <Providers>{children}</Providers>
       </body>
     </html>
