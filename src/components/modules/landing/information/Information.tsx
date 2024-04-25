@@ -36,6 +36,7 @@ const Information = () => {
         onPointerUp={() => {
           setGrab("grab");
         }}
+        userSelect={"none"}
         cursor={grab}
         dragConstraints={{
           top: -180,
