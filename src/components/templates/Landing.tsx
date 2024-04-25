@@ -1,17 +1,19 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import IntroductionSvg from "../modules/landing/introduction/IntroductionSvg";
+import Information from "../modules/landing/information/Information";
 
 const Landing = () => {
   return (
-    <Flex
-      h="100svh"
-      w={"75%"}
-      justifyContent="center"
-      alignItems="center"
-      m={"auto"}
+    <Box
+      scrollSnapType={"y mandatory"}
+      overflowY={"scroll"}
+      h={"100vh"}
+      scrollBehavior={"smooth"}
+      scrollSnapStop="always"
     >
       <IntroductionSvg />
-    </Flex>
+      <Information />
+    </Box>
   );
 };
 
