@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { montserrat } from "./fonts";
-import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Alireza Nikzad",
@@ -16,10 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
-        <Header />
-        {children}
-      </body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }
