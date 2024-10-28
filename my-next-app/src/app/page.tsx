@@ -26,17 +26,17 @@ const SOCIAL_MEDIA = [
   {
     id: "telegram",
     Icon: <TelegramIcon />,
-    link: "https://github.com/deaduchiha/",
+    link: "https://t.me/deaduchiha",
   },
   {
     id: "instagram",
     Icon: <InstagramLogoIcon />,
-    link: "https://github.com/deaduchiha/",
+    link: "https://www.instagram.com/alirezankz/",
   },
   {
     id: "x",
     Icon: <XIcon />,
-    link: "https://github.com/deaduchiha/",
+    link: "https://x.com/alirezankz",
   },
 ];
 
