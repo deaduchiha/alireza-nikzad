@@ -45,18 +45,18 @@ export default function Home() {
     <main className="flex flex-col gap-10">
       <Section>
         <motion.h1
-          initial={{ x: -60, y: -40, opacity: 0 }}
+          initial={{ y: -40, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="font-bold text-[2rem] md:text-[4rem] lg:text-[6rem]"
+          className="font-bold text-[3rem] md:text-[6rem] lg:text-[8rem]"
         >
           Web developer
         </motion.h1>
         <motion.button
-          initial={{ x: -60, y: -40, opacity: 0 }}
+          initial={{ y: -40, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 100, delay: 0.5 }}
-          className="mt-10 rounded-full border border-input px-4 py-2 bg-background hover:bg-accent hover:text-accent-foreground"
+          className="mt-14 rounded-full border text-md border-input px-4 py-2 bg-background hover:bg-accent hover:text-accent-foreground"
         >
           Alireza Nikzad
         </motion.button>
@@ -90,6 +90,63 @@ export default function Home() {
               </Link>
             </motion.button>
           ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.9 }}
+          className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8"
+        >
+          <motion.div
+            className="text-justify"
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 2, stiffness: 200, type: "spring" }}
+          >
+            <p className="font-bold mb-2">About</p>
+            <p className="text-slate-700">
+              a frontend developer with a keen focus on new technologies. My
+              extensive experience in the frontend industry has been channeled
+              towards specialized consulting, contracting and freelance work My
+              primary objective is to facilitate the growth and innovation of
+              the web developing. By combining our efforts, we can significantly
+              contribute to the advancement of decentralized technology.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 2.2, stiffness: 200, type: "spring" }}
+          >
+            <p className="font-bold mb-2">Contact</p>
+            <a
+              className="text-slate-700"
+              href="mailto:alireza.nikzdd@gmail.com"
+            >
+              alireza.nikzdd@gmail.com
+            </a>
+            <br />
+
+            <a
+              className="text-slate-700 inline-block mt-1"
+              href="tel:+989904100416"
+            >
+              {" "}
+              +98 990 410 0416
+            </a>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 2.4, stiffness: 200, type: "spring" }}
+          >
+            <p className="font-bold mb-2">Stacks:</p>
+            <p className="text-slate-700">Frontend</p>
+            <p className="text-slate-700">Backend</p>
+          </motion.div>
         </motion.div>
       </Section>
 
