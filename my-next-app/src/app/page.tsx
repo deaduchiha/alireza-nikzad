@@ -1,7 +1,44 @@
 "use client";
+import TelegramIcon from "@/components/icons/TelegramIcon";
+import XIcon from "@/components/icons/XIcon";
 import Section from "@/components/Section";
 import { Button } from "@/components/ui/button";
+import {
+  GitHubLogoIcon,
+  LinkedInLogoIcon,
+  InstagramLogoIcon,
+} from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
+
+import Link from "next/link";
+
+const SOCIAL_MEDIA = [
+  {
+    id: "github",
+    Icon: <GitHubLogoIcon />,
+    link: "https://github.com/deaduchiha/",
+  },
+  {
+    id: "linkedin",
+    Icon: <LinkedInLogoIcon />,
+    link: "https://www.linkedin.com/in/alireza-nikzad/",
+  },
+  {
+    id: "telegram",
+    Icon: <TelegramIcon />,
+    link: "https://github.com/deaduchiha/",
+  },
+  {
+    id: "instagram",
+    Icon: <InstagramLogoIcon />,
+    link: "https://github.com/deaduchiha/",
+  },
+  {
+    id: "x",
+    Icon: <XIcon />,
+    link: "https://github.com/deaduchiha/",
+  },
+];
 
 export default function Home() {
   return (
@@ -23,6 +60,37 @@ export default function Home() {
         >
           Alireza Nikzad
         </motion.button>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.9 }}
+          className="flex gap-2 mt-4"
+        >
+          {SOCIAL_MEDIA.map(({ id, Icon, link }, i) => (
+            <motion.button
+              key={id}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 250,
+                delay: 1 + 0.25 * i,
+                delayChildren: 1,
+                duration: 0.6,
+              }}
+              className="rounded-full border border-input !w-11 !h-11 bg-background hover:bg-accent hover:text-accent-foreground"
+            >
+              <Link
+                className="w-full h-full flex justify-center items-center"
+                target="_blank"
+                href={link}
+              >
+                {Icon}
+              </Link>
+            </motion.button>
+          ))}
+        </motion.div>
       </Section>
 
       <Section>hello</Section>
