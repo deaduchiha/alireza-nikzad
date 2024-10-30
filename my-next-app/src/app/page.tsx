@@ -47,7 +47,7 @@ export default function Home() {
         <motion.h1
           initial={{ y: -40, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 100 }}
+          transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
           className="font-bold text-[3rem] md:text-[6rem] lg:text-[8rem]"
         >
           Web developer
@@ -55,7 +55,7 @@ export default function Home() {
         <motion.button
           initial={{ y: -40, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 100, delay: 0.5 }}
+          transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
           className="mt-14 rounded-full border text-md border-input px-4 py-2 bg-background hover:bg-accent hover:text-accent-foreground"
         >
           Alireza Nikzad
@@ -64,7 +64,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.9 }}
+          transition={{ delay: 0.4 }}
           className="flex gap-2 mt-4"
         >
           {SOCIAL_MEDIA.map(({ id, Icon, link }, i) => (
@@ -75,7 +75,7 @@ export default function Home() {
               transition={{
                 type: "spring",
                 stiffness: 250,
-                delay: 1 + 0.25 * i,
+                delay: 0.5 + 0.25 * i,
                 delayChildren: 1,
                 duration: 0.6,
               }}
@@ -95,14 +95,14 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.9 }}
+          transition={{ delay: 1 }}
           className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8"
         >
           <motion.div
             className="text-justify"
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2, stiffness: 200, type: "spring" }}
+            transition={{ delay: 1.2, stiffness: 200, type: "spring" }}
           >
             <p className="font-bold mb-2">About</p>
             <p className="text-slate-700">
@@ -118,7 +118,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2.2, stiffness: 200, type: "spring" }}
+            transition={{ delay: 1.3, stiffness: 200, type: "spring" }}
           >
             <p className="font-bold mb-2">Contact</p>
             <a
@@ -141,7 +141,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2.4, stiffness: 200, type: "spring" }}
+            transition={{ delay: 1.4, stiffness: 200, type: "spring" }}
           >
             <p className="font-bold mb-2">Stacks:</p>
             <p className="text-slate-700">Frontend</p>
@@ -150,7 +150,22 @@ export default function Home() {
         </motion.div>
       </Section>
 
-      <Section>hello</Section>
+      <Section>
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+          className="font-bold text-[3rem] flex justify-between"
+        >
+          Projects
+        </motion.h2>
+
+        <div className="flex justify-between flex-wrap">
+          <motion.div>
+            <p>project</p>
+          </motion.div>
+        </div>
+      </Section>
     </main>
   );
 }
