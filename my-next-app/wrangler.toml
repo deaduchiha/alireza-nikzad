@@ -29,7 +29,7 @@ pages_build_output_dir = ".vercel/output/static"
 # [[d1_databases]]
 # binding = "MY_DB"
 # database_name = "my-database"
-# database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+# database_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # Bind a Durable Object. Durable objects are a scale-to-zero compute primitive based on the actor model.
 # Durable Objects can live for as long as needed. Use these when you need a long-running "server", such as in realtime apps.
@@ -85,3 +85,8 @@ pages_build_output_dir = ".vercel/output/static"
 # [[env.production.kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
 # id = "<PRODUCTION_NAMESPACE_ID>"
+
+[[d1_databases]]
+binding = "DB" # available in your Worker on env.DB
+database_name = "alireza-db"
+database_id = "7c1d0fd7-21b5-4fed-ba5b-1e2a88ebb4aa"

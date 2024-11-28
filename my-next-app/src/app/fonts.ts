@@ -1,8 +1,8 @@
-import { Montserrat } from "next/font/google";
+import { Kdam_Thmor_Pro } from "next/font/google";
 
-const montserrat = Montserrat({
-  weight: ["300", "400", "500", "600", "700", "800"],
-  subsets: ["latin"],
+const kdamThmorPro = Kdam_Thmor_Pro({
+  weight: "400",
+  subsets: ["khmer"],
 });
 
-export { montserrat };
+export { kdamThmorPro };

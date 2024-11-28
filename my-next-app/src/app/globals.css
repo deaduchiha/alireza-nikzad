@@ -8,6 +8,15 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+html {
+  background: #161616;
+}
+
+body {
+  background: linear-gradient(63.18deg, #161616 48.61%, #171717 99.36%);
+  color: #fff;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
